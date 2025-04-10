@@ -4,7 +4,7 @@ import pandas
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 
-DRIVER_PATH = '/Users/moonma/Downloads/chromedriver-mac-x64/chromedriver'
+DRIVER_PATH = '/opt/homebrew/bin/chromedriver'
 LEADS_FNAME = 'csv/100_batch.csv'
 PAGE_LOAD_TIME = 4
 SCROLL_WAIT_TIME = 2
@@ -13,6 +13,8 @@ video_time = PAGE_LOAD_TIME + SCROLL_WAIT_TIME*3
 service = Service(executable_path=DRIVER_PATH)
 options = webdriver.ChromeOptions()
 options.add_argument("--start-maximized")
+options.binary_location = "/Applications/Brave Browser.app/Contents/MacOS/Brave Browser"
+
 driver = webdriver.Chrome(service=service, options=options)
 
 df_raw = pandas.read_csv(LEADS_FNAME)

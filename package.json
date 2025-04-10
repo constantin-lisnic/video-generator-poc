@@ -1,0 +1,32 @@
+{
+  "name": "video-generator-poc",
+  "version": "1.0.0",
+  "description": "[Clipio](https://clipio.com/) is a cheaper option than [pitchlane](https://pitchlane.com/?gclid=CjwKCAiAtt2tBhBDEiwALZuhAA6eUbE9iTTvlpcibtNnvmvJpO-58IX8LHac_woj7nIADLqF8qS2hBoCXV8QAvD_BwE), however, both of them have the following problems:",
+  "main": "1_website_recording.js",
+  "scripts": {
+    "start": "ts-node src/1_website_recording.ts",
+    "build": "tsc",
+    "test": "ts-node src/1_website_recording.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moon-home/loom_email.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moon-home/loom_email/issues"
+  },
+  "homepage": "https://github.com/moon-home/loom_email#readme",
+  "dependencies": {
+    "@types/node": "^22.14.0",
+    "@types/puppeteer": "^5.4.7",
+    "csv-parse": "^5.6.0",
+    "puppeteer": "^19.0",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2"
+  }
+}
