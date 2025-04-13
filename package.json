@@ -4,14 +4,13 @@
   "description": "[Clipio](https://clipio.com/) is a cheaper option than [pitchlane](https://pitchlane.com/?gclid=CjwKCAiAtt2tBhBDEiwALZuhAA6eUbE9iTTvlpcibtNnvmvJpO-58IX8LHac_woj7nIADLqF8qS2hBoCXV8QAvD_BwE), however, both of them have the following problems:",
   "main": "1_website_recording.js",
   "scripts": {
-    "start": "ts-node src/1_website_recording.ts",
     "build": "tsc",
-    "test": "ts-node src/1_website_recording.ts",
-    "run-all": "ts-node src/run_all.ts",
+    "record-website": "ts-node src/1_website_recording.ts",
     "extract-frames": "ts-node src/2_extract_frames.ts",
     "process-frames": "ts-node src/3_process_frames.ts",
     "combine-frames": "ts-node src/4_combine_frames.ts",
-    "merge-videos": "ts-node src/5_merge_videos.ts"
+    "merge-videos": "ts-node src/5_merge_videos.ts",
+    "run-all": "ts-node src/run_all.ts"
   },
   "repository": {
     "type": "git",

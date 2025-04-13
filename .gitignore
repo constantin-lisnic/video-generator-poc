@@ -4,5 +4,9 @@ failed_urls.csv
 batch_emails.csv
 node_modules
 dist
-frames
-frames-processed
+videos/combined-frames/*
+videos/frames/*
+videos/frames-processed/*
+videos/merged-videos/*
+videos/original-bubble-video/*
+videos/website-recordings/*

@@ -4,7 +4,6 @@ import smoothScroll from "./utils/smooth-scroll";
 
 async function recordWebsite(url: string, outputPath: string): Promise<void> {
   const browser = await puppeteer.launch({
-    headless: false,
     defaultViewport: null,
   });
 
@@ -34,7 +33,7 @@ async function recordWebsite(url: string, outputPath: string): Promise<void> {
 
 recordWebsite(
   "https://developerpro.io",
-  `video/1-recording/test_recording_${Date.now()}.mp4`
+  `./videos/website-recordings/test_recording.mp4`
 )
   .then(() => {
     console.log("Recording complete successfully");

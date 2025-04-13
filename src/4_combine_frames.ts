@@ -21,9 +21,9 @@ async function combineFramesAndAudio(
 }
 
 combineFramesAndAudio(
-  "frames-processed",
-  "video/my-bubble.mp4",
-  "bubble-output-with-audio.webm"
+  "./videos/frames-processed",
+  "./videos/original-bubble-video/my-bubble.mp4",
+  "./videos/combined-frames/bubble-output-with-audio.webm"
 )
   .then(() => process.exit(0))
   .catch((error) => {

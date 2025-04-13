@@ -48,8 +48,8 @@ async function processFrames(
   console.log("Frame processing completed");
 }
 
-const inputDir = "frames";
-const outputDir = "frames-processed";
+const inputDir = "./videos/frames";
+const outputDir = "./videos/frames-processed";
 
 processFrames(inputDir, outputDir, {
   width: 500,

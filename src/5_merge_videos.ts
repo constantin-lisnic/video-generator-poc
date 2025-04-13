@@ -21,9 +21,9 @@ async function mergeVideos(
 }
 
 mergeVideos(
-  "./video/1-recording/test_recording_1744292905317.mp4",
-  "bubble-output-with-audio.webm",
-  "final_output.webm"
+  "./videos/website-recordings/test_recording.mp4",
+  "./videos/combined-frames/bubble-output-with-audio.webm",
+  "./videos/merged-videos/final_output.webm"
 )
   .then(() => process.exit(0))
   .catch((error) => {

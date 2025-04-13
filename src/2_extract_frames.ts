@@ -25,7 +25,7 @@ async function extractFrames(
 }
 
 // Usage
-extractFrames("./video/my-bubble.mp4", "frames")
+extractFrames("./videos/original-bubble-video/my-bubble.mp4", "./videos/frames")
   .then(() => process.exit(0))
   .catch((error) => {
     console.error(error);
