@@ -6,7 +6,12 @@
   "scripts": {
     "start": "ts-node src/1_website_recording.ts",
     "build": "tsc",
-    "test": "ts-node src/1_website_recording.ts"
+    "test": "ts-node src/1_website_recording.ts",
+    "run-all": "ts-node src/run_all.ts",
+    "extract-frames": "ts-node src/2_extract_frames.ts",
+    "process-frames": "ts-node src/3_process_frames.ts",
+    "combine-frames": "ts-node src/4_combine_frames.ts",
+    "merge-videos": "ts-node src/5_merge_videos.ts"
   },
   "repository": {
     "type": "git",
@@ -22,8 +27,11 @@
   "dependencies": {
     "@types/node": "^22.14.0",
     "@types/puppeteer": "^5.4.7",
+    "@types/sharp": "^0.31.1",
     "csv-parse": "^5.6.0",
     "puppeteer": "^19.0",
+    "puppeteer-screen-recorder": "^3.0.6",
+    "sharp": "^0.34.1",
     "typescript": "^5.8.3"
   },
   "devDependencies": {

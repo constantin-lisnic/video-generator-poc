@@ -44,3 +44,6 @@ recordWebsite(
     console.error(error);
     process.exit(1);
   });
+
+// Extract frames from the video
+// ffmpeg -i ./video/1-recording/test_recording_1744292905317.mp4 -vf fps=25 frames/frame_%04d.png

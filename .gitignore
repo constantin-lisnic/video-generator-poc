@@ -4,3 +4,5 @@ failed_urls.csv
 batch_emails.csv
 node_modules
 dist
+frames
+frames-processed
