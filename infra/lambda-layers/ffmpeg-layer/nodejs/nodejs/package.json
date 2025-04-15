@@ -1,0 +1,6 @@
+{
+  "name": "ffmpeg-layer",
+  "version": "1.0.0",
+  "description": "FFmpeg binaries for Lambda",
+  "main": "index.js"
+}
