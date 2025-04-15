@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc && npm run copy-lambda-files",
     "copy-lambda-files": "npm run copy-record-website && npm run copy-process-frames && npm run copy-merge-videos",
-    "copy-record-website": "mkdir -p lambda/record-website/utils && cp dist/handlers/record-website/index.js lambda/record-website/index.js && cp dist/utils/smooth-scroll.js lambda/record-website/utils/",
+    "copy-record-website": "cp dist/handlers/record-website/index.js lambda/record-website/index.js && cp dist/handlers/record-website/smooth-scroll.js lambda/record-website/",
     "copy-process-frames": "cp dist/handlers/process-frames/index.js lambda/process-frames/index.js",
     "copy-merge-videos": "cp dist/handlers/merge-videos/index.js lambda/merge-videos/index.js",
     "record-website": "ts-node src/1_website_recording.ts",

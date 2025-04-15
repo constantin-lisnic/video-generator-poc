@@ -1,6 +1,6 @@
 import puppeteer from "puppeteer";
 import { PuppeteerScreenRecorder } from "puppeteer-screen-recorder";
-import smoothScroll from "./utils/smooth-scroll";
+import smoothScroll from "./handlers/record-website/smooth-scroll";
 
 async function recordWebsite(url: string, outputPath: string): Promise<void> {
   const browser = await puppeteer.launch({

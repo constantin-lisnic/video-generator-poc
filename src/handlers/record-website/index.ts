@@ -2,7 +2,7 @@ import { SQSEvent } from "aws-lambda";
 import { S3 } from "aws-sdk";
 import chromium from "chrome-aws-lambda";
 import { PuppeteerScreenRecorder } from "puppeteer-screen-recorder";
-import smoothScroll from "../../utils/smooth-scroll";
+import smoothScroll from "./smooth-scroll";
 import fs from "fs";
 import aws from "aws-sdk";
 
