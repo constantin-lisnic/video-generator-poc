@@ -4,7 +4,11 @@
   "description": "[Clipio](https://clipio.com/) is a cheaper option than [pitchlane](https://pitchlane.com/?gclid=CjwKCAiAtt2tBhBDEiwALZuhAA6eUbE9iTTvlpcibtNnvmvJpO-58IX8LHac_woj7nIADLqF8qS2hBoCXV8QAvD_BwE), however, both of them have the following problems:",
   "main": "1_website_recording.js",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && npm run copy-lambda-files",
+    "copy-lambda-files": "npm run copy-record-website && npm run copy-process-frames && npm run copy-merge-videos",
+    "copy-record-website": "mkdir -p lambda/record-website/utils && cp dist/handlers/record-website/index.js lambda/record-website/index.js && cp dist/utils/smooth-scroll.js lambda/record-website/utils/",
+    "copy-process-frames": "cp dist/handlers/process-frames/index.js lambda/process-frames/index.js",
+    "copy-merge-videos": "cp dist/handlers/merge-videos/index.js lambda/merge-videos/index.js",
     "record-website": "ts-node src/1_website_recording.ts",
     "extract-frames": "ts-node src/2_extract_frames.ts",
     "process-frames": "ts-node src/3_process_frames.ts",
@@ -33,13 +37,12 @@
     "csv-parse": "^5.6.0",
     "puppeteer-core": "^10.1.0",
     "puppeteer-screen-recorder": "^2.0.1",
-    "sharp": "^0.34.1",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.8.3"
+    "sharp": "^0.34.1"
   },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.149",
     "@types/uuid": "^10.0.0",
-    "ts-node": "^10.9.2"
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
   }
 }

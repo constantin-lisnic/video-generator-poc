@@ -1,0 +1,9 @@
+{
+  "name": "record-website",
+  "version": "1.0.0",
+  "dependencies": {
+    "aws-sdk": "^2.1531.0",
+    "puppeteer-core": "10.1.0",
+    "puppeteer-screen-recorder": "2.1.2"
+  }
+}
