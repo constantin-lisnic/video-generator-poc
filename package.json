@@ -27,13 +27,19 @@
     "@types/node": "^22.14.0",
     "@types/puppeteer": "^5.4.7",
     "@types/sharp": "^0.31.1",
+    "aws-lambda": "^1.0.7",
+    "aws-sdk": "^2.1692.0",
+    "chrome-aws-lambda": "^10.1.0",
     "csv-parse": "^5.6.0",
-    "puppeteer": "^19.0",
-    "puppeteer-screen-recorder": "^3.0.6",
+    "puppeteer-core": "^10.1.0",
+    "puppeteer-screen-recorder": "^2.0.1",
     "sharp": "^0.34.1",
+    "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
   },
   "devDependencies": {
+    "@types/aws-lambda": "^8.10.149",
+    "@types/uuid": "^10.0.0",
     "ts-node": "^10.9.2"
   }
 }
